@@ -1,0 +1,75 @@
+mat-card.body .title{
+  line-height:1.2em;
+  color:#fff;
+  font-weight:700;
+  text-transform:uppercase;
+  text-align:right;
+  font-size:110%;
+  margin-bottom:5px
+}
+mat-card.body .title span{
+  display:block;
+  text-align:right;
+  font-size:130%;
+  color:#62a3e3
+}
+
+mat-card.data-card {
+  padding: 5px;
+  white-space: nowrap;
+  background:#ededed;
+  margin: 0px 5px 10px 5px;
+  width: 210px;
+  line-height: 1.25;
+  height: 60px;
+  .val {
+    clear:both;
+  }
+  .val_sin {
+    width: 40%;
+    float: left;
+    white-space: nowrap;
+    font-weight:bold;
+  }
+  .val_des {
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  &.image {
+    width: 155px;
+    padding-left: 60px;
+  }
+  .card_title{
+    color:#186cb8;
+    font-size:20px;
+    font-weight:bold;
+    overflow: hidden;
+  }
+
+  .card_title.long{
+    line-height: 1;
+    height: 45px;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+  }
+
+  $imagedir:'/assets/img/'; // define the base path before the mixin
+  $images: tot, pos, tam, iso, ric, ter, gua, dec, pop, cal, cap;
+  @mixin background($filename,$position:0 center,$repeat: no-repeat) {
+    background: #ededed url(#{$imagedir}#{$filename}) $repeat $position;
+  }
+  @each $image in $images {
+    &.#{$image} {
+      @include background('data_#{$image}.png');
+    }
+  }
+
+}
+.data-card.odd, .data-card:nth-of-type(odd) {
+  float: left;
+}
+.data-card.even, .data-card:nth-of-type(even) {
+  float: right;
+  margin-left: 10px;
+}

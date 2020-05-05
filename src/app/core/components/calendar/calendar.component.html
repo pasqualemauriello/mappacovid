@@ -1,0 +1,31 @@
+<mat-card  class="data-card high"  [ngClass]= "math ? math : ''">
+  <mat-card-content>
+    <div class="calendar">
+  <button mat-icon-button id="minDate" aria-label="Primo giorno" [disabled]="disabledPrev">
+    <mat-icon>first_page</mat-icon>
+  </button>
+  <button mat-icon-button id="decrementDate" aria-label="Giorno precedente" [disabled]="disabledPrev">
+    <mat-icon>exposure_neg_1</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="Calendario">
+    <mat-icon matDatepickerToggleIcon (click)="datepickerRef.open()">today</mat-icon>
+  </button>
+  <button mat-icon-button id="incrementDate" aria-label="Giorno successivo"  [disabled]="disabledNext">
+    <mat-icon>exposure_plus_1</mat-icon>
+  </button>
+  <button mat-icon-button id="maxDate" aria-label="Ultimo giorno" [disabled]="disabledNext">
+    <mat-icon>last_page</mat-icon>
+  </button>
+  <div class="val_sin">
+    <input type="text" matInput [min]="minDate" [max]="maxDate"
+           [matDatepicker]="datepickerRef"
+           (dateChange)="currentPeriodClicked($event)"
+           (click)="datepickerRef.open()"
+           [formControl]="formControlDate"
+           readonly
+    >
+    <mat-datepicker #datepickerRef disabled="false"></mat-datepicker>
+  </div>
+</div>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,8 @@
+<div class="legend">
+  <div class=""><b>Casi compless.</b></div>
+  <div *ngFor="let leg of legendDisplayTipo">
+    <span class="legendColor"  [ngStyle]="{ backgroundColor: leg.color }"></span>
+    <span class="leg1">{{leg.min | number}}</span><span>{{ leg.max ? '-' : '+' }}</span><span>{{leg.max | number}}</span>
+  </div>
+</div>
+

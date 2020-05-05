@@ -1,0 +1,13 @@
+<mat-card class="data-card" [ngClass]= "[img ? 'image ' + img : '', math ? math : '']">
+  <mat-card-content>
+    <div class="card_title" [ngClass] = "!key1 ? 'long' : ''">{{title}}</div>
+    <!-- Riga 1-->
+    <div class="val" *ngIf="key1">
+      <div class="val_sin">{{key1}}</div><div class="val_des">{{value1|number}}</div>
+    </div>
+    <!-- Riga 2-->
+    <div class="val">
+      <div class="val_sin">{{key2}}</div><div class="val_des">{{value2|number}}</div>
+    </div>
+  </mat-card-content>
+</mat-card>

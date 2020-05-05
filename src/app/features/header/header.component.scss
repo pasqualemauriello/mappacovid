@@ -1,0 +1,33 @@
+div.head{
+  background:#ffffff url('/assets/img/data_positivi_orig.png') 10px center no-repeat;
+  padding:20px 0 10px 100px;
+  border-radius:10px 10px 0 0;
+  height: auto;
+  /*margin-bottom:10px;*/
+}
+
+.icons{
+  top:-18px
+}
+
+.mat-mini-fab.mat-success {
+  color: #f0fff3;
+  background-color: #186cb8;
+  padding: 0;
+  margin-left: 5px;
+  height: 35px;
+  width: 35px;
+}
+
+.mat-mini-fab.mat-success:hover {
+  background-color: #f0fff3;
+  color: #186cb8;
+}
+.mat-mini-fab.mat-success .mat-icon {
+  margin-top: -8px;
+}
+
+.popup h1 {
+  text-align: center;
+}
+

@@ -1,0 +1,21 @@
+<div class="body">
+<app-tab [bricRegione]="bricRegione" [bricProvincia]="bricProvincia"></app-tab>
+  <div class="cards">
+
+    <app-card [img]="'pop'" [title]="dataName" [key2]="'Popol.'" [value2]="dataPop"></app-card>
+    <app-calendar [minDate]="minDate" [maxDate]="maxDate"></app-calendar>
+  </div>
+
+  <div style="clear:both;"></div>
+  <div class="cards">
+    <ng-container *ngFor="let item of dataItems; let i=index; let even = even;">
+      <div *ngIf="even" style="clear:both;"></div>
+      <app-card [img]="item.style" [title]="item.title" [key1]="item.key1" [value1]="item.value1" [key2]="item.key2" [value2]="item.value2"></app-card>
+
+    </ng-container>
+
+  </div>
+  <div style="clear:both;"></div>
+</div> <!-- END id="container" class="pannello" -->
+
+<app-footer></app-footer>

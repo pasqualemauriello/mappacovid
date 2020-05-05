@@ -1,0 +1,11 @@
+<mat-tab-group class="tabs" headerPosition="below" (selectedTabChange)="tabChanged($event)" [(selectedIndex)]="tabId">
+  <mat-tab label="Italia">
+    <div class="briciole"><span *ngIf="bricNazione">> {{bricNazione}}</span></div>
+  </mat-tab>
+  <mat-tab label="Regioni">
+    <div class="briciole"><span *ngIf="bricNazione">> {{bricNazione}}</span><span *ngIf="bricRegione"> > {{bricRegione}}</span></div>
+  </mat-tab>
+  <mat-tab label="Province">
+    <div class="briciole"><span *ngIf="bricNazione">> {{bricNazione}}</span><span *ngIf="bricProvincia"> > {{bricRegione}}</span><span *ngIf="bricProvincia"> > {{bricProvincia}}</span></div>
+  </mat-tab>
+</mat-tab-group>

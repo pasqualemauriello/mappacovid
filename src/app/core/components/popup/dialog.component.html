@@ -1,0 +1,72 @@
+
+<div class="popup" [ngSwitch]="data.tipo">
+  <div *ngSwitchCase="'info'">
+    <h1 class="title">Informazioni sull'autore</h1>
+    <br>
+    <div class="container chi-siamo">
+      <div><img src="/assets/img/info/pasquale_mauriello.jpg" class="scale-with-grid"></div>
+      <h2>Pasquale Mauriello</h2>
+      <div class="role">Idea &amp; Coding</div>
+      <br>
+      <h2>Contatti</h2>
+      <div><span><b>Email: </b></span><span>pmauriel@gmail.com</span></div>
+      <div><span><b>Cel: </b></span><span>+39 351 185.2943</span></div>
+      <div><span><b>LinkedIn: </b></span><span>pasqualemauriello</span></div>
+      <div><span><b>Facebook: </b></span><span>pasqualemauriellopage</span></div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'privacy'">
+    <div class="iub_container iub_base_container">
+      <div id="wbars">
+        <div class="iub_content simple_pp">
+          <div class="iub_header">
+            <h1>Privacy Policy di <strong>www.mappacovid.it</strong></h1>
+            <p>
+              Questa Applicazione raccoglie alcuni Dati Personali dei propri Utenti.
+            </p>
+          </div> <!-- /header -->
+          <h2 id="purposes_data">Dati personali raccolti per le seguenti finalità ed utilizzando i seguenti servizi:</h2>
+          <ul class="for_boxes cf">
+            <li class="one_line_col">
+              <ul class="for_boxes">
+                <li>
+                  <div class="iconed policyicon_purpose_5">
+                    <h3>Statistica</h3>
+                    <ul class="unstyled">
+                      <li>
+                        <h3>Google Analytics</h3>
+                        <p>Dati Personali: Cookie; Dati di utilizzo</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h2 id="contact_information">Informazioni di contatto</h2>
+          <ul class="for_boxes cf">
+            <li class="one_line_col">
+              <ul class="for_boxes">
+                <li>
+                  <div class="iconed icon_owner">
+                    <h3>Titolare del Trattamento dei Dati</h3>
+                    <p>Pasquale Mauriello</p>
+                    <p><b>Indirizzo email del Titolare:</b> pmauriel@gmail.com</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="iub_footer">
+            <p>
+              Ultima modifica: 20 aprile 2020
+            </p>
+            <a href="//www.iubenda.com/privacy-policy/930145/legal" title="Visualizza la Privacy Policy Completa" class="show_comp_link iframe-preserve an-preserve">Visualizza la Privacy Policy Completa</a>
+
+          </div> <!-- /footer -->
+        </div> <!-- /content -->
+      </div> <!-- /wbars -->
+
+    </div> <!-- /container base_container -->
+  </div> <!-- /wbars_wrapper -->
+</div>

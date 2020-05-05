@@ -1,0 +1,18 @@
+/* Styles for tab labels */
+.body .mat-tab-label {
+  min-width: 150px !important;
+  padding: 5px;
+  color: #ff0000;
+  font-weight: 700;
+}
+
+/* Styles for the active tab label */
+.mat-tab-label.mat-tab-label-active {
+  padding: 5px;
+  color: #ff0000;
+}
+
+/* Styles for the active tab label */
+.tabs {
+  margin-top: 10px;
+}

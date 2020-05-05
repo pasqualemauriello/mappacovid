@@ -1,0 +1,30 @@
+.calendar input[type="text"]{
+  border:1px solid #ccc;
+  outline:none;
+  font:22px "Trebuchet MS",Arial,sans-serif;
+  width:206px;
+  text-align: center;
+}
+
+.calendar {
+  /*border: 1px solid #111111;*/
+}
+
+.calendar button {
+  width: 42px;
+  height: 26px;
+  line-height: 0px;
+}
+
+.calendar mat-icon {
+  vertical-align: top;
+  color: #186cb8;
+}
+
+.calendar mat-icon:hover {
+  color: #0000ff;
+}
+
+.calendar button:disabled mat-icon {
+  color: #888888;
+}

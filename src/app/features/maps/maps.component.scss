@@ -1,0 +1,40 @@
+#map {
+  // height: 100%; /* like this */
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:0
+}
+
+#tail{
+  position:absolute;
+  float:left;
+  min-width:120px;
+  max-width:250px;
+  padding:10px;
+  z-index:50;
+  background:rgba(255,255,255,0.9);
+  border:2px solid #00519e;
+  border-radius:10px
+}
+
+#tail #datiNome {
+  text-align: center;
+}
+
+#tail td {
+  padding-right:10px;
+}
+
+.hiddenClass {
+  visibility: hidden;
+  display: none;
+}
+
+.infowindow_scroller{
+  max-height:180px;
+  padding-right:10px;
+  overflow-y:scroll
+}

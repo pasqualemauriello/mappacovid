@@ -1,0 +1,22 @@
+.legend {
+  margin-top: 10px;
+  font: 14px/18px Arial,Helvetica,sans-serif;
+  background: rgba(255,255,255,.8);
+  max-width: 450px;
+  height: 70px;
+  padding: 10px;
+  border-radius:0 0 10px 10px;
+}
+.legend div {
+  padding: 10px 0;
+  float: left;
+  margin-right: 15px;
+  line-height: 15px;
+}
+.legendColor {
+  border: 1px solid;
+  height: 12px;
+  width: 12px;
+  margin-right: 3px;
+  float: left;
+}

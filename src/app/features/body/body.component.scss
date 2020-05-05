@@ -1,0 +1,77 @@
+div.body{
+  background-color:#fff;
+  opacity: 0.95;
+  padding: 5px;
+  border-radius: 0;
+  /*border-radius:0 0 10px 10px;*/
+  box-shadow:0 1px 3px 0 rgba(0,0,0,0.61)
+}
+mat-card.body .title{
+  line-height:1.2em;
+  color:#fff;
+  font-weight:700;
+  text-transform:uppercase;
+  text-align:right;
+  font-size:110%;
+  margin-bottom:5px
+}
+mat-card.body .title span{
+  display:block;
+  text-align:right;
+  font-size:130%;
+  color:#62a3e3
+}
+.icons{
+  text-align:right;
+  position:absolute;
+  right:4px;
+  top:-10px
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+.briciole a{
+  font-weight:bold;
+  text-decoration:underline
+}
+
+.infowindow1{
+  font-weight:bold;
+  text-align:center
+}
+
+.cards{
+  margin-top:10px
+}
+
+/* Styles for the ink bar */
+
+a:visited{
+  color:#000
+}
+a:hover{
+  color:#91C0EF
+}
+
+.pos_var_pos {
+  color: darkgreen;
+}
+
+.pos_var_neg {
+  color: darkred;
+}
+
+/* Styles for tab labels */
+.body .mat-tab-label {
+  min-width: 150px !important;
+  padding: 5px;
+  color: #ff0000;
+  font-weight: 700;
+}
+
+/* Styles for the active tab label */
+.mat-tab-label.mat-tab-label-active {
+  padding: 5px;
+  color: #ff0000;
+}

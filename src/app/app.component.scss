@@ -1,0 +1,16 @@
+#wrapper{
+  /*width:460px;*/
+  width:auto;
+  background-color:transparent;
+  position:absolute;
+  left:20px;
+  top:30px;
+  z-index:1;
+  vertical-align:baseline;
+  /*font-family: 'Trebuchet MS', serif;*/
+}
+.wrapper-scroll{
+  border:1px solid #000;
+  margin:10px 0;
+  position:relative
+}
